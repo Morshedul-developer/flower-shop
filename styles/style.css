@@ -14,7 +14,8 @@
 .banner,
 .featured-flowers,
 .services,
-.instagram {
+.instagram,
+.subscribe {
   width: 100%;
   max-width: 1200px;
   margin: 0 auto;
@@ -237,6 +238,46 @@ main > section {
   vertical-align: middle;
 }
 
+/* subscribe related styles */
+.subscribe{
+  background-image: url(../assets/Rectangle\ 9.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 100%;
+  padding: 122px ;
+  border-radius: 8px;
+  -webkit-border-radius: 8px;
+  -moz-border-radius: 8px;
+  -ms-border-radius: 8px;
+  -o-border-radius: 8px;
+  justify-content: center;
+  align-items: center;
+}
+.subscribe-container{
+  max-width: 700px;
+  margin: 0 auto;
+  text-align: center;
+}
+.subscribe-des{
+  font-size: 1.1rem;
+  line-height: 1.5rem;
+  margin-bottom: 30px;
+}
+.input{
+  gap: 16px;
+}
+.input input{
+  width: 500px;
+  font-size: 1.25rem;
+  padding: 18px 38px;
+  border: none;
+  border-radius: 8px;
+  -webkit-border-radius: 8px;
+  -moz-border-radius: 8px;
+  -ms-border-radius: 8px;
+  -o-border-radius: 8px;
+}
+
 
 /* Media Query Starts */
 
@@ -250,7 +291,8 @@ main > section {
   .nav-links,
   .banner,
   .flower-cards,
-  .deal-container {
+  .deal-container,
+  .input {
     flex-direction: column;
   }
   .nav-links {
@@ -284,6 +326,10 @@ main > section {
     text-align: center;
     gap: 60px;
   }
+
+  .input input{
+    width: 100%;
+  }
 }
 
 /* tablet device */
@@ -296,7 +342,8 @@ main > section {
   .nav-links,
   .banner,
   .flower-cards,
-  .deal-container {
+  .deal-container,
+  .input {
     flex-direction: column;
   }
   .nav-links {
@@ -331,5 +378,8 @@ main > section {
 
   .deal-image img{
     width: 100%;
+  }
+  .input input::placeholder{
+    text-align: center;
   }
 }
