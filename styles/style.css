@@ -12,22 +12,23 @@
 
 .navbar,
 .banner,
-main {
+.featured-flowers,
+.services {
   width: 100%;
   max-width: 1200px;
   margin: 0 auto;
 }
 
 main > section {
-  margin-top: 130px;
+  margin-top: 130px !important;
 }
 
 .bg-light {
   background: rgba(229, 84, 115, 0.1);
 }
 
-.bg-gray{
-    background-color: rgba(39, 39, 39, 0.05);
+.bg-gray {
+  background-color: rgba(39, 39, 39, 0.05);
 }
 
 .text-dark {
@@ -38,12 +39,16 @@ main > section {
   color: rgba(39, 39, 39, 0.6);
 }
 
+.text-pink {
+  color: #e55473;
+}
+
 .flex {
   display: flex;
 }
 
-.grid{
-    display: grid;
+.grid {
+  display: grid;
 }
 
 .primary-btn {
@@ -166,28 +171,50 @@ main > section {
 }
 
 /* service related style */
-.services{
-    border-radius: 8px;
-    -webkit-border-radius: 8px;
-    -moz-border-radius: 8px;
-    -ms-border-radius: 8px;
-    -o-border-radius: 8px;
+.services {
+  border-radius: 8px;
+  -webkit-border-radius: 8px;
+  -moz-border-radius: 8px;
+  -ms-border-radius: 8px;
+  -o-border-radius: 8px;
 }
-.service-container{
-    max-width: 850px;
-    margin: 0 auto;
-    padding: 60px 0;
-    grid-template-columns: repeat(3, 1fr);
-    gap: 60px;
+.service-container {
+  max-width: 850px;
+  margin: 0 auto;
+  padding: 60px 0;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 60px;
 }
-.service{
-    gap: 18px;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
+.service {
+  gap: 18px;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
 
-
+/* deal related styles */
+.deal {
+  background-color: rgba(229, 84, 115, 0.05);
+  padding: 80px 0;
+}
+.deal-container {
+  max-width: 1000px;
+  margin: 0 auto;
+  align-items: center;
+  justify-content: space-between;
+  gap: 120px;
+}
+.deal-info {
+  max-width: 450px;
+  text-align: center;
+  margin: 0 auto;
+}
+.deal-image img {
+  width: 75%;
+}
+.deal-des {
+  margin-bottom: 32px;
+}
 
 /* Media Query Starts */
 
@@ -200,8 +227,11 @@ main > section {
   }
   .nav-links,
   .banner,
-  .flower-cards {
+  .flower-cards,
+  .deal-container {
     flex-direction: column;
+  }
+  .nav-links {
     align-items: center;
   }
   .banner img {
@@ -223,8 +253,13 @@ main > section {
     width: 100%;
   }
 
-  .service-container{
+  .service-container {
     grid-template-columns: 1fr;
+  }
+
+  .deal-container{
+    text-align: center;
+    gap: 60px;
   }
 }
 
@@ -239,6 +274,8 @@ main > section {
   .banner,
   .flower-cards {
     flex-direction: column;
+  }
+  .nav-links {
     align-items: center;
   }
   .banner img {
@@ -260,7 +297,7 @@ main > section {
     width: 100%;
   }
 
-  .service-container{
+  .service-container {
     grid-template-columns: 1fr;
   }
 }
