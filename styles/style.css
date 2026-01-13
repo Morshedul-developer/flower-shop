@@ -13,7 +13,8 @@
 .navbar,
 .banner,
 .featured-flowers,
-.services {
+.services,
+.instagram {
   width: 100%;
   max-width: 1200px;
   margin: 0 auto;
@@ -213,8 +214,29 @@ main > section {
   width: 75%;
 }
 .deal-des {
+  line-height: 1.5rem;
   margin-bottom: 32px;
 }
+
+/* instagram related styles */
+.insta-info{
+  max-width: 520px;
+  margin: 0 auto;
+  text-align: center;
+}
+.insta-des{
+  line-height: 1.5rem;
+  margin-bottom: 48px;
+}
+.insta-cards{
+  grid-template-columns: repeat(4, 1fr);
+  gap: 24px;
+}
+.insta-card img{
+  width: 100%;
+  vertical-align: middle;
+}
+
 
 /* Media Query Starts */
 
@@ -253,7 +275,8 @@ main > section {
     width: 100%;
   }
 
-  .service-container {
+  .service-container,
+  .insta-cards {
     grid-template-columns: 1fr;
   }
 
@@ -272,7 +295,8 @@ main > section {
   }
   .nav-links,
   .banner,
-  .flower-cards {
+  .flower-cards,
+  .deal-container {
     flex-direction: column;
   }
   .nav-links {
@@ -299,5 +323,13 @@ main > section {
 
   .service-container {
     grid-template-columns: 1fr;
+  }
+  
+  .insta-cards{
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .deal-image img{
+    width: 100%;
   }
 }
