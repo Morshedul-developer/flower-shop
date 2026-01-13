@@ -63,6 +63,9 @@
   font-size: 1rem;
   font-weight: 600;
 }
+.nav-link:hover{
+    text-decoration: underline;
+}
 
 /* banner related styles */
 .banner {
