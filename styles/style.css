@@ -11,9 +11,15 @@
 }
 
 .navbar,
-.banner {
-  max-width: 1440px;
+.banner,
+main {
+  width: 100%;
+  max-width: 1200px;
   margin: 0 auto;
+}
+
+main > section{
+    margin-top: 130px;
 }
 
 .bg-light {
@@ -24,27 +30,34 @@
   color: #272727;
 }
 
-.text-light{
-    color: rgba(39, 39, 39, 0.6);
+.text-light {
+  color: rgba(39, 39, 39, 0.6);
 }
 
 .flex {
   display: flex;
 }
 
-.primary-btn{
-    font-size: 1.25rem;
-    font-weight: 700;
-    color: #FFFFFF;
-    background-color: #E55473;
-    padding: 20px 43px;
-    border: none;
-    cursor: pointer;
-    border-radius: 8px;
-    -webkit-border-radius: 8px;
-    -moz-border-radius: 8px;
-    -ms-border-radius: 8px;
-    -o-border-radius: 8px;
+.primary-btn {
+  font-size: 1.25rem;
+  font-weight: 700;
+  color: #ffffff;
+  background-color: #e55473;
+  padding: 18px 38px;
+  border: none;
+  cursor: pointer;
+  border-radius: 8px;
+  -webkit-border-radius: 8px;
+  -moz-border-radius: 8px;
+  -ms-border-radius: 8px;
+  -o-border-radius: 8px;
+}
+
+.section-title{
+    font-size: 2.5rem;
+    font-weight: 900;
+    color: #272727;
+    margin-bottom: 24px;
 }
 
 /* navbar related styles */
@@ -63,29 +76,84 @@
   font-size: 1rem;
   font-weight: 600;
 }
-.nav-link:hover{
-    text-decoration: underline;
+.nav-link:hover {
+  text-decoration: underline;
 }
 
 /* banner related styles */
 .banner {
-  justify-content: center;
+  justify-content: space-between;
   align-items: center;
   gap: 97px;
 }
 .banner-info {
   max-width: 708px;
 }
-.banner-title{
-    font-size: 5rem;
-    margin-bottom: 32px;
+.banner-title {
+  font-size: 4.5rem;
+  margin-bottom: 25px;
 }
-.banner-description{
-    font-size: 1.1rem;
-    line-height: 1.8rem;
-    margin-bottom: 32px;
+.banner-description {
+  font-size: 1rem;
+  line-height: 1.5rem;
+  margin-bottom: 25px;
 }
 .banner-image img {
   max-height: 626px;
   vertical-align: middle;
+}
+
+/* featured flowers related style */
+.featured-flowers{
+    padding-bottom: 130px;
+}
+.feature-info{
+    max-width: 594px;
+    margin: 0 auto;
+    text-align: center;
+}
+.feature-description{
+    font-size: 1rem;
+  line-height: 1.5rem;
+  margin-bottom: 40px;
+}
+.flower-cards{
+    gap: 24px;
+}
+.flower-card{
+    flex-wrap: wrap;
+    gap: 32px;
+    justify-content: center;
+}
+.flower{
+    width: 384px;
+    height: 400px;
+    background-color: #e55473;
+    border-top-left-radius: 300px;
+    border-top-right-radius: 300px;
+    justify-content: center;
+    align-items: end;
+}
+#flower-1{
+    background-color: rgba(167, 33, 98, 0.15);
+}
+#flower-2{
+    background-color: rgba(5, 151, 160, 0.15);
+    align-items: center;
+}
+#flower-3{
+    background-color: rgba(71, 125, 17, 0.15);
+}
+.flower-card img{
+    width: 220px;
+    height: 320px;
+}
+#f-2{
+    width: 250px;
+    height: 300px;
+}
+.flower-title{
+    font-size: 1.4rem;
+    font-weight: 700;
+    text-decoration: underline;
 }
