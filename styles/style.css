@@ -145,15 +145,13 @@ main > section {
   background-color: rgba(71, 125, 17, 0.15);
 }
 .flower-card img {
-  width: 220px;
+  width: 250px;
   height: 320px;
 }
 #f-2 {
-  width: 250px;
   height: 300px;
 }
 #f-3 {
-  width: 230px;
   height: 360px;
 }
 .flower-title {
@@ -170,43 +168,65 @@ main > section {
 /* mobile device */
 @media screen and (max-width: 576px) {
   .nav-links,
-  .banner {
+  .banner,
+  main {
+    padding: 0 16px;
+  }
+  .nav-links,
+  .banner,
+  .flower-cards {
     flex-direction: column;
     align-items: center;
   }
   .banner img {
     width: 100%;
   }
-  .banner{
+  .banner {
     gap: 60px;
   }
   .banner-info {
     max-width: 100%;
     text-align: center;
   }
-  .banner-title{
+  .banner-title {
     font-size: 3rem;
+  }
+
+  .feature-info,
+  .flower {
+    width: 100%;
   }
 }
 
 /* tablet device */
 @media screen and (min-width: 577px) and (max-width: 992px) {
-    .nav-links,
-  .banner {
+  .nav-links,
+  .banner,
+  main {
+    padding: 0 16px;
+  }
+  .nav-links,
+  .banner,
+  .flower-cards {
     flex-direction: column;
     align-items: center;
   }
   .banner img {
     width: 100%;
   }
-  .banner{
+  .banner {
     gap: 60px;
   }
   .banner-info {
     max-width: 100%;
     text-align: center;
   }
-  .banner-title{
+  .banner-title {
     font-size: 3.5rem;
+  }
+
+  .feature-info,
+  .flower {
+    width: 100%;
   }
 }
