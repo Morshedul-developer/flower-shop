@@ -18,8 +18,8 @@ main {
   margin: 0 auto;
 }
 
-main > section{
-    margin-top: 130px;
+main > section {
+  margin-top: 130px;
 }
 
 .bg-light {
@@ -53,11 +53,11 @@ main > section{
   -o-border-radius: 8px;
 }
 
-.section-title{
-    font-size: 2.5rem;
-    font-weight: 900;
-    color: #272727;
-    margin-bottom: 24px;
+.section-title {
+  font-size: 2.5rem;
+  font-weight: 900;
+  color: #272727;
+  margin-bottom: 24px;
 }
 
 /* navbar related styles */
@@ -104,56 +104,109 @@ main > section{
 }
 
 /* featured flowers related style */
-.featured-flowers{
-    padding-bottom: 130px;
+.featured-flowers {
+  padding-bottom: 130px;
 }
-.feature-info{
-    max-width: 594px;
-    margin: 0 auto;
-    text-align: center;
+.feature-info {
+  max-width: 594px;
+  margin: 0 auto;
+  text-align: center;
 }
-.feature-description{
-    font-size: 1rem;
+.feature-description {
+  font-size: 1rem;
   line-height: 1.5rem;
   margin-bottom: 40px;
 }
-.flower-cards{
-    gap: 24px;
+.flower-cards {
+  gap: 24px;
 }
-.flower-card{
-    flex-wrap: wrap;
-    gap: 32px;
-    justify-content: center;
+.flower-card {
+  flex-wrap: wrap;
+  gap: 32px;
+  justify-content: center;
 }
-.flower{
-    width: 384px;
-    height: 400px;
-    background-color: #e55473;
-    border-top-left-radius: 300px;
-    border-top-right-radius: 300px;
-    justify-content: center;
-    align-items: end;
+.flower {
+  width: 384px;
+  height: 400px;
+  background-color: #e55473;
+  border-top-left-radius: 300px;
+  border-top-right-radius: 300px;
+  justify-content: center;
+  align-items: end;
 }
-#flower-1{
-    background-color: rgba(167, 33, 98, 0.15);
+#flower-1 {
+  background-color: rgba(167, 33, 98, 0.15);
 }
-#flower-2{
-    background-color: rgba(5, 151, 160, 0.15);
+#flower-2 {
+  background-color: rgba(5, 151, 160, 0.15);
+  align-items: center;
+}
+#flower-3 {
+  background-color: rgba(71, 125, 17, 0.15);
+}
+.flower-card img {
+  width: 220px;
+  height: 320px;
+}
+#f-2 {
+  width: 250px;
+  height: 300px;
+}
+#f-3 {
+  width: 230px;
+  height: 360px;
+}
+.flower-title {
+  font-size: 1.4rem;
+  font-weight: 700;
+  text-decoration: underline;
+}
+
+.display {
+  display: none;
+}
+/* Media Query */
+
+/* mobile device */
+@media screen and (max-width: 576px) {
+  .nav-links,
+  .banner {
+    flex-direction: column;
     align-items: center;
+  }
+  .banner img {
+    width: 100%;
+  }
+  .banner{
+    gap: 60px;
+  }
+  .banner-info {
+    max-width: 100%;
+    text-align: center;
+  }
+  .banner-title{
+    font-size: 3rem;
+  }
 }
-#flower-3{
-    background-color: rgba(71, 125, 17, 0.15);
-}
-.flower-card img{
-    width: 220px;
-    height: 320px;
-}
-#f-2{
-    width: 250px;
-    height: 300px;
-}
-.flower-title{
-    font-size: 1.4rem;
-    font-weight: 700;
-    text-decoration: underline;
+
+/* tablet device */
+@media screen and (min-width: 577px) and (max-width: 992px) {
+    .nav-links,
+  .banner {
+    flex-direction: column;
+    align-items: center;
+  }
+  .banner img {
+    width: 100%;
+  }
+  .banner{
+    gap: 60px;
+  }
+  .banner-info {
+    max-width: 100%;
+    text-align: center;
+  }
+  .banner-title{
+    font-size: 3.5rem;
+  }
 }
