@@ -80,6 +80,11 @@ main > section, footer {
 .navbar {
   padding: 25px 0;
   padding-bottom: 80px;
+  justify-content: end;
+  align-items: center;
+}
+.navbar > div{
+  display: none;
 }
 .nav-links {
   justify-content: end;
@@ -315,7 +320,6 @@ footer{
 
 /* mobile device */
 @media screen and (max-width: 576px) {
-  .nav-links,
   .banner,
   main
    {
@@ -330,9 +334,17 @@ footer{
   .input {
     flex-direction: column;
   }
-  .nav-links {
-    align-items: center;
+  .navbar{
+    padding: 25px 16px;
+    padding-bottom: 35px;
   }
+ .nav-links{
+  display: none;
+}
+.navbar > div{
+  display: block;
+  font-size: 1.5rem;
+}
   .banner img{
     width: 100%;
   }
@@ -402,15 +414,26 @@ footer{
   .footer-container {
     padding: 0 16px;
   }
+  main > section, footer {
+  margin-top: 70px !important;
+}
   .nav-links,
   .banner,
   .deal-container,
   .input {
     flex-direction: column;
   }
-  .nav-links {
-    align-items: center;
+  .navbar{
+    padding: 25px 16px;
+    padding-bottom: 35px;
   }
+ .nav-links{
+  display: none;
+}
+.navbar > div{
+  display: block;
+  font-size: 1.8rem;
+}
   .banner img {
     width: 100%;
   }
@@ -420,6 +443,10 @@ footer{
   .banner-info {
     max-width: 100%;
     text-align: center;
+  }
+  .banner-description{
+    margin: auto;
+    margin-bottom: 25px;
   }
   .banner-title {
     font-size: 3.5rem;
@@ -440,8 +467,14 @@ footer{
     grid-template-columns: repeat(2, 1fr);
   }
 
+  .deal {
+  padding: 50px 0;
+}
+  .deal-container {
+  gap: 80px;
+}
   .deal-image img{
-    width: 100%;
+    width: 90%;
   }
 
   .input input{
@@ -450,4 +483,7 @@ footer{
   .input input::placeholder{
     text-align: center;
   }
+  footer{
+  padding: 70px 0;
+}
 }
