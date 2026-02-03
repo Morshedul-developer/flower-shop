@@ -46,10 +46,6 @@ main > section, footer {
   color: #e55473;
 }
 
-.text-deep{
-  background-color: #111010;
-}
-
 .flex {
   display: flex;
 }
@@ -83,6 +79,7 @@ main > section, footer {
 /* navbar related styles */
 .navbar {
   padding: 25px 0;
+  padding-bottom: 80px;
 }
 .nav-links {
   justify-content: end;
@@ -104,22 +101,26 @@ main > section, footer {
 .banner {
   justify-content: space-between;
   align-items: center;
-  gap: 97px;
+  /* gap: 97px; */
 }
 .banner-info {
-  max-width: 708px;
+  max-width: 600px;
 }
 .banner-title {
   font-size: 4.5rem;
   margin-bottom: 25px;
 }
 .banner-description {
+  max-width: 550px;
   font-size: 1rem;
   line-height: 1.5rem;
   margin-bottom: 25px;
 }
+.banner-image{
+  justify-content: end;
+}
 .banner-image img {
-  max-height: 626px;
+  max-height: 572px;
   vertical-align: middle;
 }
 
@@ -206,16 +207,15 @@ main > section, footer {
   padding: 80px 0;
 }
 .deal-container {
-  max-width: 1000px;
-  margin: 0 auto;
+  max-width: 1100px;
+  margin: auto;
   align-items: center;
-  justify-content: space-between;
-  gap: 120px;
+  gap: 150px;
 }
 .deal-info {
   max-width: 450px;
   text-align: center;
-  margin: 0 auto;
+  margin: auto;
 }
 .deal-image img {
   width: 75%;
@@ -287,18 +287,24 @@ main > section, footer {
 /* footer related styles */
 footer{
   padding: 128px 0;
-}
-.footer-container{
-  max-width: 520px;
-  margin: 0 auto;
   text-align: center;
+  background-color: #111010;;
+}
+.footer-container > div{
+  max-width: 750px;
+  margin: auto;
+  margin-bottom: 25px;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.4);
 }
 .footer-container .section-title{
   color: #ffffff;
 }
 .footer-des{
-  color: #ffffff;
-  margin-bottom: 25px;
+  max-width: 520px;
+  margin: auto;
+  line-height: 30px;
+  color: #ffffffd2;
+  padding-bottom: 25px;
 }
 .copyright{
   color: rgba(255, 255, 255, 0.4);
@@ -311,10 +317,13 @@ footer{
 @media screen and (max-width: 576px) {
   .nav-links,
   .banner,
-  main,
-  .footer-container {
+  main
+   {
     padding: 0 16px;
   }
+  main > section, footer {
+  margin-top: 50px !important;
+}
   .nav-links,
   .banner,
   .deal-container,
@@ -351,6 +360,7 @@ footer{
 
   .deal-container{
     text-align: center;
+    padding: 0 15px;
     gap: 60px;
   }
 
@@ -360,13 +370,28 @@ footer{
   }
   .input input{
     width: 100%;
-    font-size: 1.1rem;
+    font-size: 1rem;
     text-align: center;
   }
   .input input::placeholder{
     text-align: center;
-    font-size: 1.1rem;
+    font-size: 1rem;
   }
+
+  footer{
+  padding: 60px 0;
+}
+  .footer-container > div{
+    margin: 0 16px;
+    margin-bottom: 25px;
+  }
+  .footer-des{
+    font-size: .875rem;
+  line-height: 24px;
+}
+.copyright{
+  font-size: .875rem;
+}
 }
 
 /* tablet device */
